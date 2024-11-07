@@ -9,47 +9,58 @@ body {
   background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
   linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
   linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
-  
+  text-align: left;
   background: url('./images/ss.jpg');
+}
+div .p1{
+  padding-top: 30px;
+text-align: left;
+}
+div .p2{
+  text-align: right;
+  padding-top: 30px;
 }
 .rowbg{
  
-  background: url('./images/w15.jpg');
+  
   width: 770px;
-  height: 500px;
-  margin: -150px;
+  height: 650px;
+ 
 }
 .colbg{
+  
   display: flex;
   flex-direction: column;
 font-weight:bolder;
    
-  padding-top: 45px;
+  padding-top:45px;
   font-size: 25px;
  
 
 }
 
-.weather{
- 
-  width: 10px;
-height:500px;
 
-
-}
 
 .app {
+  border-radius: 20px;
   text-align: center;
   box-shadow: 0 2px 10px rgba(228, 223, 223, 0.53);
   width:385px;
-  height: 500px;
-  background-color: #66bddc;
-  
+  height: 650px;
+ background-color: aqua;
+padding-top: 20px;
 } 
 
 .dark-mode {
   background-color: #131111;
   color: #ffffff;
+  font-size: 20px;
+}
+.light-mode{
+  background:  linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+   
+  color:rgb(4, 9, 47);
+  font-size: 20px;
 }
 
 .weather-card {
@@ -64,7 +75,7 @@ height:500px;
 }
 
 .weather-card h1 {
-  margin: 0;
+  margin-bottom: 10px;
  
 }
 
@@ -78,7 +89,7 @@ header {
 
 header input {
   padding: 10px;
-  margin-top: 10px;
+  margin-top:20px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size:medium;

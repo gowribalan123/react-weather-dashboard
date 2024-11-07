@@ -83,24 +83,22 @@ const handleCityChange = (e) => { setCity(e.target.value); }
  //clearInterval(intervaltemp); // Cleanup interval on component unmount
 
  return (
-    <div className="container " >
-      <div class="row rowbg">
-        <div class="col  colbg ">
-        <p>{dateFormat(currentDate, "dddd, mmmm dS, yyyy")}</p>
-      <p>{time.toLocaleTimeString()} </p>
-       
+  <div className="container " >
+  <div class="row rowbg">
+    
+    
+  
+  
+  
+  
+   
+  
+          <div className={darkMode ? 'app  dark-mode' : 'app light-mode'}> 
+              <header > 
+                <h1 >Weather Dashboard</h1>
       
-      
-      
-      
-        </div>
 
-        <div class="col">
-            <div class="weather">
-               <div className={darkMode ? 'app weather dark-mode' : 'app'}> 
-                  <header > 
-                    <h1>Weather Dashboard</h1>
-                    
+      
                   <input type="text" value={city} onChange={handleCityChange} 
                    placeholder="Enter city" />
                   <button onClick={toggleDarkMode}>
@@ -113,12 +111,22 @@ const handleCityChange = (e) => { setCity(e.target.value); }
                   
                 )
                }
+               <div className='container'>
+
+              <div class='row'>
+                <div class='col'>
+                
+               <p className='p1'>{dateFormat(currentDate, "dddd, mmmm dS, yyyy")} </p>
                </div>
+               <div class='col'>
+  <p className='p2'> {time.toLocaleTimeString()} </p>
+  </div></div>
+  </div>    </div>
              </div>
         </div>
 
-      </div>
-    </div>
+    
+    
       
       
     
